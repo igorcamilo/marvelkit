@@ -7,17 +7,17 @@
 
 import Foundation
 
-struct Story {
+public struct Story {
 
-    struct Summary : Codable {
+    public struct Summary : Codable {
 
         /// The path to the individual story resource.
-        var resourceURI: URL
+        public var resourceURI: URL
 
         /// The canonical name of the story.
-        var name: String
+        public var name: String
 
         /// The type of the story (interior or cover).
-        var type: String
+        public var type: String
     }
 }

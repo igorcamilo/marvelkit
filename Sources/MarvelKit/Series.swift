@@ -7,14 +7,14 @@
 
 import Foundation
 
-struct Series {
+public struct Series {
 
-    struct Summary : Codable {
+    public struct Summary : Codable {
 
         /// The path to the individual series resource.
-        var resourceURI: URL
+        public var resourceURI: URL
 
         /// The canonical name of the series
-        var name: String
+        public var name: String
     }
 }

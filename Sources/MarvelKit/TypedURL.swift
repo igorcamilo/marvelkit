@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct TypedURL : Codable {
+public struct TypedURL : Codable {
 
     /// A text identifier for the URL.
-    var type: String
+    public var type: String
 
     /// A full URL (including scheme, domain, and path).
-    var url: URL
+    public var url: URL
 }

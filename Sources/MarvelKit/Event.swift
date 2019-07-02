@@ -7,14 +7,14 @@
 
 import Foundation
 
-struct Event {
+public struct Event {
 
-    struct Summary : Codable {
+    public struct Summary : Codable {
 
         /// The path to the individual event resource.
-        var resourceURI: URL
+        public var resourceURI: URL
 
         /// The name of the event.
-        var name: String
+        public var name: String
     }
 }
