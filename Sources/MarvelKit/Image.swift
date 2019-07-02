@@ -7,15 +7,15 @@
 
 import Foundation
 
-struct Image : Codable {
+public struct Image : Codable {
 
     /// The directory path of to the image.
-    var path: String
+    public var path: String
 
     /// The file extension for the image.
-    var `extension`: String
+    public var `extension`: String
 
-    var url: URL? {
+    public var url: URL? {
         return URL(string: path)?.appendingPathExtension(`extension`)
     }
 }
